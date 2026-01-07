@@ -28,6 +28,6 @@
     }
   ],
   "environment": {
-    "API_KEY": "您的DeepSeek-API-Key"
+    "API_KEY": "your-dashscope-api-key-here"
   }
 }
