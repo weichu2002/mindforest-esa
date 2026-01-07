@@ -1,0 +1,33 @@
+{
+  "functions": {
+    "ai": {
+      "handler": "./functions/ai.js",
+      "methods": ["POST", "OPTIONS"]
+    },
+    "collab": {
+      "handler": "./functions/collab.js",
+      "methods": ["POST", "GET", "OPTIONS"]
+    }
+  },
+  "routes": [
+    {
+      "pattern": "/",
+      "file": "./index.html"
+    },
+    {
+      "pattern": "/ai",
+      "function": "ai"
+    },
+    {
+      "pattern": "/api/ai",
+      "function": "ai"
+    },
+    {
+      "pattern": "/api/collab",
+      "function": "collab"
+    }
+  ],
+  "environment": {
+    "API_KEY": "您的DeepSeek-API-Key"
+  }
+}
