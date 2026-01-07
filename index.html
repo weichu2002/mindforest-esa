@@ -396,7 +396,7 @@
         const DEFAULT_SYSTEM_PROMPT = "你是一个智能助手。回答要专业、清晰，使用Markdown格式。";
         
         // ESA AI API 端点 - 使用您的ai.js函数
-        const ESA_AI_ENDPOINT = '/ai'; // 根据您的esa.config.json配置
+        const ESA_AI_ENDPOINT = '/api/ai'; // 根据您的esa.config.json配置
         
         // Pusher配置（用于实时同步）
         const PUSHER_CONFIG = {
@@ -1360,7 +1360,7 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 
-                        model: "deepseek-v3", 
+                        model: "deepseek-v3.2", 
                         messages: messages, 
                         stream: true 
                     })
